@@ -17,6 +17,7 @@ export class Habits extends Component {
     }
 
     render() {
+        console.log("habits")
         return (
             <>
                 <HabitAddForm onAdd={this.handleAdd}/>
@@ -25,6 +26,8 @@ export class Habits extends Component {
                         <Habit 
                             key={habit.id}
                             habit={habit}
+                            // name={habit.name}
+                            // count={habit.count}
                             onIncrement={this.handleIncrement}
                             onDecrement={this.hnadleDecrement}
                             onDelete={this.handleDelete}
